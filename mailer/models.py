@@ -5,7 +5,7 @@ import logging
 import pickle
 import datetime
 
-from django.utils.encoding import python_2_unicode_compatible
+from six import python_2_unicode_compatible
 from django.utils.timezone import now as datetime_now
 from django.core.mail import EmailMessage
 from django.db import models
